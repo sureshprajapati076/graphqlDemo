@@ -1,0 +1,44 @@
+
+
+
+This project includes UI version of graphql (Check GraphQLBookController file for UI)
+http://localhost:9090/graphiql  => in browser
+example query:
+
+{
+  allBooks {
+    id
+    title
+    author
+  }
+  findById(id: 2) {
+    id
+    title
+  }
+}
+
+
+
+
+
+And it also includes REST Exposure on top of graphql using GraphQLService.... (See BookController file)
+
+For this service, we need to implement DataFetcher interface....
+
+
+How to test:
+
+for RestControler, first http://localhost:9090/loadall dummy data in h2.
+and you can use http://localhost:9090/rungraph in postman with data as query string (See postMan-query.png)
+
+{
+  allBooks {
+    id
+    title
+    author
+  }
+  findById(id: 2) {
+    id
+    title
+  }
+}

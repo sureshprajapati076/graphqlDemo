@@ -1,0 +1,11 @@
+type Query {
+    allBooks: [Book]
+    findById(id: ID!): Book
+}
+
+type Book {
+    id: ID!
+    title: String
+    author: String
+    publishedDate: String
+}
