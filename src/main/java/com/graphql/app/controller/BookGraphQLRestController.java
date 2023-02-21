@@ -13,13 +13,13 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-public class BookController {
+public class BookGraphQLRestController {
 
     private final BookRepository repository;
 
     private final GraphQLService graphQLService;
 
-    public BookController(BookRepository repository, GraphQLService graphQLService) {
+    public BookGraphQLRestController(BookRepository repository, GraphQLService graphQLService) {
         this.repository = repository;
         this.graphQLService = graphQLService;
     }
